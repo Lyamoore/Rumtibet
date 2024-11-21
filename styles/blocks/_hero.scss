@@ -1,0 +1,29 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 41px;
+  padding-bottom: 82px;
+
+  @include mobile {
+    height: 600px;
+    row-gap: 32px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-family: "NEXT ART", sans-serif;
+    letter-spacing: 0.02em;
+    color: $color-white;
+
+    @include mobile {
+      align-items: flex-start;
+      column-gap: 0px;
+    }
+  }
+
+  &__button {
+    width: 213px;
+  }
+}

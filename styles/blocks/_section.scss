@@ -1,0 +1,63 @@
+.section {
+  padding-block: $section-padding-y-top $section-padding-y-bottom;
+
+  @include mobile {
+    padding-block: 50px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 580px;
+
+    @include mobile {
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    &--left {
+      align-items: flex-start;
+    }
+  }
+
+  &__addition {
+    color: $color-yellow;
+    @include fluid-text(24, 16);
+    line-height: 0.83;
+
+    @include mobile {
+      line-height: 1.25;
+    }
+  }
+
+  &__title {
+    color: $color-black;
+    line-height: 1.2;
+  }
+
+  &--padding-reset {
+    padding-block: 0;
+  }
+
+  &--hero {
+    background-image: url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--gray {
+    background-color: $color-gray;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--black {
+    background-color: $color-black;
+  }
+}

@@ -1,0 +1,49 @@
+.mailing {
+  position: absolute;
+  bottom: -1;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 64px;
+  padding-block: 40px;
+  background-color: $color-white;
+  box-shadow: 0 0 15px 0 $color-shadow;
+  border-radius: 6px;
+  width: 100%;
+
+  @include mobile {
+    position: static;
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 18px;
+    transform: none;
+    padding-block: 24px;
+  }
+
+  &__header {
+    max-width: 380px;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  }
+
+  &__addition {
+    @include fluid-text(18, 16);
+    line-height: 1.11;
+
+    @include mobile {
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    @include fluid-text(26, 24);
+  }
+}

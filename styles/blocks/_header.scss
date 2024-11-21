@@ -1,0 +1,55 @@
+.header {
+  padding-top: 16px;
+
+  &__logo {
+    @include mobile {
+      width: 84px;
+      height: 44px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 49px;
+
+    @include mobile {
+      column-gap: 0px;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+    font-weight: 600px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+
+      font-weight: 600;
+      color: $color-white;
+    }
+  }
+
+  &__burger-button {
+    background-color: transparent;
+    border: none;
+    height: 44px;
+    width: 44px;
+  }
+
+  &--position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

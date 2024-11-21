@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-green;
+  padding: $btn-padding-small;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: $color-white;
+  background-color: $color-green;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &--large {
+    padding: $btn-padding-large;
+
+    @include mobile {
+      padding: $btn-padding-small;
+    }
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-green;
+  }
+
+  &--inversion {
+    border: none;
+    background-color: $color-white;
+    color: $color-green;
+
+    &:hover {
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Румтибет</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="test">
+    <header class="header header--position">
+      <div class="header__inner container">
+        <a href="" class="header__logo-container logo">
+          <img
+            src="images/icon_logo.svg"
+            alt="Румтибет"
+            class="header__logo"
+            width="137"
+            height="72"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Про гида</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Программа тура</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Стоимость</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Блог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button button hidden-mobile" type="button">
+          Консультация
+        </button>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          onclick="mobileOverlay.showModal()"
+        >
+          <img
+            src="./images/icon_burger-menu.svg"
+            alt="burger-menu"
+            width=""
+            height=""
+            loading="lazy"
+          />
+          <span class="visually-hidden">Открыть меню навигации</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section section--hero section--padding-reset">
+        <div class="hero container">
+          <header class="hero__header">
+            <h1 class="hero__title">
+              Насладись прогулкой в горах с&nbsp;командой единомышленников
+            </h1>
+          </header>
+          <div class="program-selection hidden-mobile">
+            <form class="program-selection__form">
+              <div
+                class="program-selection__location program-selection__form-block"
+              >
+                <div class="program-selection__form-input">
+                  Локация для тура
+                  <img
+                    src="./images/icon_arrow-down.svg"
+                    alt="arrow"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="program-selection__form-description">
+                  выберите из списка
+                </p>
+              </div>
+              <div
+                class="program-selection__location program-selection__form-block"
+              >
+                <div class="program-selection__form-input">
+                  Дата похода
+                  <img
+                    src="./images/icon_date.svg"
+                    alt="arrow"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="program-selection__form-description">
+                  укажите диапазон
+                </p>
+              </div>
+              <div
+                class="program-selection__location program-selection__form-block"
+              >
+                <div class="program-selection__form-input">
+                  Участники
+                  <img
+                    src="./images/icon_arrow-down.svg"
+                    alt="arrow"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="program-selection__form-description">
+                  минимум 4 человека
+                </p>
+              </div>
+              <button
+                class="program-selection__form-button button button--large button--inversion"
+              >
+                Найти программу
+              </button>
+            </form>
+          </div>
+          <button
+            class="hero__button button button--large button--inversion visible-mobile"
+          >
+            Найти программу
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="about container">
+          <div class="about__pictures">
+            <div
+              class="about__picture-container about__picture-container--bottom hidden-mobile"
+            >
+              <img
+                src="./images/pic-about_1.jpg"
+                alt="Горы"
+                class="about__picture"
+                height="400"
+                width="350"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__picture-container about__picture-container--top">
+              <img
+                src="./images/pic-about_2.jpg"
+                alt="Лес"
+                class="about__picture"
+                height="400"
+                width="350"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="about__body">
+            <header class="section__header section__header--left">
+              <div class="section__addition">
+                <p>о нашем походе</p>
+              </div>
+              <h2 class="section__title">
+                Исследуйте все горные массивы мира вместе с нами
+              </h2>
+            </header>
+            <div class="about__description">
+              <p>
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
+                взял одно из самых странных слов в Lorem Ipsum, "consectetur" и
+                занялся его поисками в классической латинской литературе.
+              </p>
+            </div>
+            <button class="about__button button button--large">
+              Программа тура
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--gray">
+        <div class="features container">
+          <div class="features__body">
+            <header class="section__header section__header--left">
+              <div class="section__addition">
+                <p>наше предложение</p>
+              </div>
+              <h2 class="section__title">Лучшие программы для тебя</h2>
+            </header>
+            <div class="features__description">
+              <p>
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа.
+              </p>
+            </div>
+            <ul class="features__list">
+              <li class="features__list-item">
+                <img
+                  src="./images/icon_guide.svg"
+                  alt="guide"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-title">Опытный гид</h3>
+                  <div class="features__list-description">
+                    <p>
+                      Для современного мира базовый вектор развития предполагает
+                      независимые способы реализации соответствующих условий
+                      активизации.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="./images/icon_safety.svg"
+                  alt="safety"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-title">Безопасный поход</h3>
+                  <div class="features__list-description">
+                    <p>
+                      Для современного мира базовый вектор развития предполагает
+                      независимые способы реализации соответствующих условий
+                      активизации.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="./images/icon_price.svg"
+                  alt="price"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-title">Лояльные цены</h3>
+                  <div class="features__list-description">
+                    <p>
+                      Для современного мира базовый вектор развития предполагает
+                      независимые способы реализации соответствующих условий
+                      активизации.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="features__button button button--large">
+              Стоимость программ
+            </button>
+          </div>
+          <div class="features__pictures hidden-mobile">
+            <img
+              src="./images/pic-features_1.jpg"
+              alt="Горы"
+              class="features__picture features__picture--top-left"
+              height="250"
+              width="250"
+              loading="lazy"
+            />
+            <img
+              src="./images/pic-features_2.jpg"
+              alt="Горы"
+              class="features__picture features__picture--top-right"
+              height="250"
+              width="250"
+              loading="lazy"
+            />
+            <img
+              src="./images/pic-features_3.jpg"
+              alt="Горы"
+              class="features__picture features__picture--bottom-left"
+              height="250"
+              width="250"
+              loading="lazy"
+            />
+            <img
+              src="./images/pic-features_4.jpg"
+              alt="Горы"
+              class="features__picture features__picture--bottom-right"
+              height="250"
+              width="250"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="popular container">
+          <header class="section__header">
+            <div class="section__addition">
+              <p>по версии отдыхающих</p>
+            </div>
+            <h2 class="section__title">Популярные направления</h2>
+          </header>
+          <div class="popular__body">
+            <ul class="popular__list">
+              <li class="popular__list-item">
+                <article class="product-card">
+                  <img
+                    src="./images/pic-popular_1.jpg"
+                    alt="Озеро возле гор"
+                    class="product-card__image"
+                    width="380"
+                    height="500"
+                    loading="lazy"
+                  />
+                  <div class="product-card__rate">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 17.27L16.15 19.78C16.91 20.24 17.84 19.56 17.64 18.7L16.54 13.98L20.21 10.8C20.88 10.22 20.52 9.12 19.64 9.04999L14.81 8.64L12.92 4.17999C12.58 3.36999 11.42 3.36999 11.08 4.17999L9.19 8.62999L4.36 9.03999C3.48 9.10999 3.12 10.21 3.79 10.79L7.46 13.97L6.36 18.69C6.16 19.55 7.09 20.23 7.85 19.77L12 17.27Z"
+                        fill="#F2BE22"
+                      />
+                    </svg>
+                    <span>4.9</span>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__body-content">
+                      <h3 class="product-card__title">Озеро возле гор</h3>
+                      <div class="product-card__description hidden-mobile">
+                        <p>романтическое приключение</p>
+                      </div>
+                    </div>
+
+                    <div class="product-card__price">
+                      <p>480 $</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="popular__list-item">
+                <article class="product-card">
+                  <img
+                    src="./images/pic-popular_2.jpg"
+                    alt="Ночь в горах"
+                    class="product-card__image"
+                    width="380"
+                    height="500"
+                    loading="lazy"
+                  />
+                  <div class="product-card__rate">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 17.27L16.15 19.78C16.91 20.24 17.84 19.56 17.64 18.7L16.54 13.98L20.21 10.8C20.88 10.22 20.52 9.12 19.64 9.04999L14.81 8.64L12.92 4.17999C12.58 3.36999 11.42 3.36999 11.08 4.17999L9.19 8.62999L4.36 9.03999C3.48 9.10999 3.12 10.21 3.79 10.79L7.46 13.97L6.36 18.69C6.16 19.55 7.09 20.23 7.85 19.77L12 17.27Z"
+                        fill="#F2BE22"
+                      />
+                    </svg>
+                    <span>4.5</span>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__body-content">
+                      <h3 class="product-card__title">Ночь в горах</h3>
+                      <div class="product-card__description hidden-mobile">
+                        <p>в компании друзей</p>
+                      </div>
+                    </div>
+
+                    <div class="product-card__price">
+                      <p>500 $</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="popular__list-item">
+                <article class="product-card">
+                  <img
+                    src="./images/pic-popular_3.jpg"
+                    alt="Йога в горах"
+                    class="product-card__image"
+                    width="380"
+                    height="500"
+                    loading="lazy"
+                  />
+                  <div class="product-card__rate">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 17.27L16.15 19.78C16.91 20.24 17.84 19.56 17.64 18.7L16.54 13.98L20.21 10.8C20.88 10.22 20.52 9.12 19.64 9.04999L14.81 8.64L12.92 4.17999C12.58 3.36999 11.42 3.36999 11.08 4.17999L9.19 8.62999L4.36 9.03999C3.48 9.10999 3.12 10.21 3.79 10.79L7.46 13.97L6.36 18.69C6.16 19.55 7.09 20.23 7.85 19.77L12 17.27Z"
+                        fill="#F2BE22"
+                      />
+                    </svg>
+                    <span>5.0</span>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__body-content">
+                      <h3 class="product-card__title">Йога в горах</h3>
+                      <div class="product-card__description hidden-mobile">
+                        <p>для тех, кто забоится о себе</p>
+                      </div>
+                    </div>
+
+                    <div class="product-card__price">
+                      <p>230 $</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <button class="popular__button button button--large">
+            Рейтинг направлений
+          </button>
+        </div>
+      </section>
+
+      <section class="section section--gray">
+        <div class="blog container">
+          <header class="section__header">
+            <div class="section__addition">
+              <p>делимся впечатлениями</p>
+            </div>
+            <h2 class="section__title">Блог о путешествиях</h2>
+          </header>
+          <div class="blog__body">
+            <ul class="blog__list">
+              <li class="blog__list-item">
+                <article class="blog-article">
+                  <img
+                    src="./images/pic-blog_1.jpg"
+                    alt="Италия"
+                    class="blog-article__image"
+                    width="230"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <div class="blog-article__body">
+                    <h3 class="blog-article__title">
+                      Красивая Италия, какая она в реальности?
+                    </h3>
+                    <div class="blog-article__description">
+                      <p>
+                        Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации.
+                      </p>
+                    </div>
+                    <div class="blog-article__footer">
+                      <div class="blog-article__date">
+                        <p>01/04/2023</p>
+                      </div>
+                      <div class="blog-article__link">
+                        <a>читать статью</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="blog__list-item">
+                <article class="blog-article">
+                  <img
+                    src="./images/pic-blog_2.jpg"
+                    alt="Полёт"
+                    class="blog-article__image blog-article__image--raised"
+                    width="230"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <div class="blog-article__body">
+                    <h3 class="blog-article__title">
+                      Долой сомнения! Весь мир открыт для вас!
+                    </h3>
+                    <div class="blog-article__description">
+                      <p>
+                        Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации ... независимые
+                        способы реализации соответствующих условий активизации
+                        ...Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации ... независимые
+                        способы реализации соответствующих условий активизации
+                        ...
+                      </p>
+                    </div>
+                    <div class="blog-article__footer">
+                      <div class="blog-article__date">
+                        <p>01/04/2023</p>
+                      </div>
+                      <div class="blog-article__link">
+                        <a>читать статью</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="blog__list-item">
+                <article class="blog-article">
+                  <img
+                    src="./images/pic-blog_3.jpg"
+                    alt="Прогулка"
+                    class="blog-article__image"
+                    width="230"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <div class="blog-article__body">
+                    <h3 class="blog-article__title">
+                      Долой сомнения! Весь мир открыт для вас!
+                    </h3>
+                    <div class="blog-article__description">
+                      <p>
+                        Для современного мира базовый вектор развития
+                        предполагает.
+                      </p>
+                    </div>
+                    <div class="blog-article__footer">
+                      <div class="blog-article__date">
+                        <p>01/04/2023</p>
+                      </div>
+                      <div class="blog-article__link">
+                        <a>читать статью</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="blog__list-item">
+                <article class="blog-article">
+                  <img
+                    src="./images/pic-blog_4.jpg"
+                    alt="Тадж Махал"
+                    class="blog-article__image"
+                    width="230"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <div class="blog-article__body">
+                    <h3 class="blog-article__title">Индия ... летим?</h3>
+                    <div class="blog-article__description">
+                      <p>Для современного мира базовый.</p>
+                    </div>
+                    <div class="blog-article__footer">
+                      <div class="blog-article__date">
+                        <p>01/04/2023</p>
+                      </div>
+                      <div class="blog-article__link">
+                        <a>читать статью</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <button class="blog__button button button--large">
+            Другие материалы
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="blocks-container">
+          <div class="photobook container">
+            <header class="section__header">
+              <div class="section__addition">
+                <p>фото-отчет</p>
+              </div>
+              <h2 class="section__title">Делимся впечатлениями</h2>
+            </header>
+            <div class="photobook__body">
+              <ul class="photobook__list">
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_1.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="580"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_2.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="280"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_3.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="280"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_4.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="280"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_5.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="580"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="photobook__list-item">
+                  <img
+                    src="./images/pic-photobook_6.jpg"
+                    alt="фото-отчет"
+                    class="photobook__image"
+                    width="280"
+                    height="250"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button class="photobook__button button button--large">
+              Наш pinterest
+            </button>
+          </div>
+
+          <div class="mailing container">
+            <header
+              class="mailing__header section__header section__header--left"
+            >
+              <div class="mailing__header-inner hidden-mobile">
+                <div class="mailing__addition section__addition">
+                  <p>актуально</p>
+                </div>
+                <h2 class="mailing__title section__title">
+                  Получайте полезные рассылки о путешествиях
+                </h2>
+              </div>
+              <div class="mailing__header-inner visible-mobile">
+                <div class="mailing__addition section__addition">
+                  <p>фото-отчет</p>
+                </div>
+                <h2 class="mailing__title section__title">
+                  Делимся впечатлениями
+                </h2>
+              </div>
+            </header>
+            <div class="mailing-subs">
+              <form class="mailing-subs__form">
+                <div class="mailing-subs__form-content">
+                  <div class="mailing-subs__form-send">
+                    <p class="mailing-subs__form-title">Введите e-mail адрес</p>
+                    <input
+                      type="text"
+                      class="mailing-subs__form-input"
+                      placeholder="name@domain.com"
+                    />
+                  </div>
+                  <button class="mailing-subs__form-button button">
+                    Подписаться на новости
+                  </button>
+                </div>
+                <p class="mailing-subs__form-description">
+                  подписываясь на новости, вы автоматически соглашаетесь с
+                  <a href="" class="mailing-subs__form-link"
+                    >условиями обработки персональных данных</a
+                  >
+                  и
+                  <a href="" class="mailing-subs__form-link"
+                    >правилами рекламных рассылок</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="section section--green section--padding-reset">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
+        <div class="footer-info container">
+          <div class="footer-info__communication">
+            <h3 class="footer-info__title">Компания «РумТибет»</h3>
+            <div class="footer-info__communication-description">
+              <p>
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа Hampden-Sydney.
+              </p>
+            </div>
+            <div class="footer-info__communication-links">
+              <a href="">info@domain.com</a>
+              <a href="">+7 (123) 456-78-90</a>
+            </div>
+            <div class="footer-info__communication-services">
+              <ul class="footer-info__communication-list">
+                <li class="footer-info__communication-item">
+                  <img
+                    src="./images/icon_telegram.svg"
+                    alt="telegram"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="footer-info__communication-item">
+                  <img
+                    src="./images/icon_vk.svg"
+                    alt="vk"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="footer-info__communication-item">
+                  <img
+                    src="./images/icon_pinterest.svg"
+                    alt="pinterest"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="footer-info__communication-item">
+                  <img
+                    src="./images/icon_skype.svg"
+                    alt="skype"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info__services">
+            <h3 class="footer-info__title">Наши услуги</h3>
+            <ul class="footer-info__list">
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Прогулки в горы летом
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Зимние походы в горы
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Посещение храмов в горах
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Экстремальные виды туризма
+                </a>
+              </li>
+              <li class="footer-info__list-item footer-info__list-item--new">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Походы в джунглях Амазонии
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Поездка в Африку
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-info__questions">
+            <h3 class="footer-info__title">Важно для путешествий</h3>
+            <ul class="footer-info__list">
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Как собрать в долгий поход?
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Жизненно важные предметы для похода
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Медицинская страховка, гарантии безопасности
+                </a>
+              </li>
+              <li class="footer-info__list-item">
+                <a href="" class="footer-info__list-link">
+                  <img src="./images/icon_arrow.svg" alt="arrow" />
+                  Если вы врач - загляните сюда
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--black section--padding-reset">
+        <div class="footer-rights container">
+          <p class="footer-rights__company">
+            ИП Константинопольский К.К., 2023
+          </p>
+          <a class="footer-rights__policy"
+            >Политика обработки персональных данных</a
+          >
+        </div>
+      </section>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button" type="submit">
+          <img
+            src="./images/icon_close-menu.svg"
+            alt="close"
+            class="mobile-overlay__close-button-image"
+            width="24"
+            height="24"
+            loading="lazy"
+          />
+          <span class="visually-hidden">Закрыть меню навигации</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__list-item">
+            <a href="" class="mobile-overlay__list-link">
+              <img src="./images/icon_arrow.svg" alt="arrow" />
+              Про гида
+            </a>
+          </li>
+          <li class="mobile-overlay__list-item">
+            <a href="" class="mobile-overlay__list-link">
+              <img src="./images/icon_arrow.svg" alt="arrow" />
+              Программа тура
+            </a>
+          </li>
+          <li class="mobile-overlay__list-item">
+            <a href="" class="mobile-overlay__list-link">
+              <img src="./images/icon_arrow.svg" alt="arrow" />
+              Стоимость
+            </a>
+          </li>
+          <li class="mobile-overlay__list-item">
+            <a href="" class="mobile-overlay__list-link">
+              <img src="./images/icon_arrow.svg" alt="arrow" />
+              Блог
+            </a>
+          </li>
+          <li class="mobile-overlay__list-item">
+            <a href="" class="mobile-overlay__list-link">
+              <img src="./images/icon_arrow.svg" alt="arrow" />
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>
